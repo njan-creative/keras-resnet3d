@@ -11,22 +11,22 @@ from __future__ import (
 )
 import six
 from math import ceil
-from keras.models import Model
-from keras.layers import (
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import (
     Input,
     Activation,
     Dense,
     Flatten
 )
-from keras.layers.convolutional import (
+from tensorflow.keras.layers.convolutional import (
     Conv3D,
     AveragePooling3D,
     MaxPooling3D
 )
-from keras.layers.merge import add
-from keras.layers.normalization import BatchNormalization
-from keras.regularizers import l2
-from keras import backend as K
+from tensorflow.keras.layers.merge import add
+from tensorflow.keras.layers.normalization import BatchNormalization
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras import backend as K
 
 
 def _bn_relu(input):
